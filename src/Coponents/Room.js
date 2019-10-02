@@ -181,7 +181,7 @@ class Room extends React.Component {
             }).then((res)=>{
                 console.log(res);
             })
-            temp.push({ msg: s, user: "I am pote", time: "05:16 PM", d: 1 });
+            temp.push({ msg: s, user:"You", time: "05:16 PM", d: 1 });
             this.setState({ msg: temp })
             this.setState({ val: "" })
 
@@ -222,7 +222,7 @@ class Room extends React.Component {
                                                 <List.Item.Meta
                                                    avatar={<Avatar size="large" src={profile} />}
                                                     title={<div className="f5 fw6  white" style={{  whiteSpace: "pre-line" }}>
-                                                    <p className="myblue br-pill f4 fl  pa2 pl3 pr3 bg-white">You</p>
+                                                    <p className="myblue br-pill f4 fl  pa2 pl3 pr3 bg-white">{item.user}</p>
                                                     <p className="msgpad tl black">{item.msg}</p>
                                                     </div>}
                                                     description={<span className="fw4 gray">{item.time}</span>}
@@ -252,8 +252,8 @@ class Room extends React.Component {
                                             <List.Item className=" mbox" >
                                                 <List.Item.Meta
                                                    avatar={<Avatar size="large" src={profile} />}
-                                                                                                    title={<div className="f5 fw6  white" style={{  whiteSpace: "pre-line" }}>
-                                                    <p className="myblue br-pill f4 fl  pa2 pl3 pr3 bg-white">{item.user}</p>
+                                                title={<div className="f5 fw6  white" style={{  whiteSpace: "pre-line" }}>
+                                                    <p className="myblue br-pill f4 fl  pa2 pl3 pr3 bg-white">You</p>
                                                     <p className="msgpad tl ">{item.msg}</p>
                                                     </div>}
                                                     description={<span className="fw4 light-gray">{item.time}</span>}
