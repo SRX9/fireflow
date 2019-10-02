@@ -1,26 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import MainPage from './Coponents/MainPage';
+import 'tachyons';
+import MediaQuery from 'react-responsive';
+import { Route} from 'react-router-dom';
+import Home from './Coponents/Home';
+class App extends React.Component
+{
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  state={
+    homeUser:""
+  }
+
+  setHomeUser=(val)=>{
+    this.setState({homeUser:val});
+  }
+
+  render()
+  {
+    return(
+      <MediaQuery minDeviceWidth={800} >
+        {(matches) =>
+          !matches
+            ? <h1 style={{margin:0}}>You are retina</h1>
+            : 
+            <div className="" style={{overflowX:"hidden"}}>
+              <Route path="/main" render={()=>{
+                return <MainPage  homeUser={this.state.homeUser} />
+              }}>
+              </Route>
+              <Route exact path="/" render={() => {
+                return <Home getHomeUser={this.setHomeUser}/>
+              }}>
+              </Route>
+            </div>}
+      </MediaQuery>
+    );
+  }
+
 }
-
+  
 export default App;
