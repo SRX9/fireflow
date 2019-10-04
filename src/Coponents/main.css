@@ -1,13 +1,15 @@
-body{
-    zoom: 100%;
-    -ms-content-zoom-chaining: 100%;
+
+.cen{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+      width: 100%;
+    position: absolute;
 }
 
-.center{
-    width: 100%;
-    position: absolute;
-    top:300px;
-}
 .q{
     scroll-behavior: smooth;
     position: bottom;

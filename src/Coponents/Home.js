@@ -6,7 +6,7 @@ import { Form, Icon, Input, Button, Typography, Layout, message} from 'antd';
 import {Row,Col} from 'react-flexbox-grid';
 import aa from '../aa.png';
 const {Content} =Layout;
-const { Title } = Typography;
+const { Title,Text } = Typography;
 
 class Home extends React.Component
 {
@@ -95,21 +95,22 @@ class Home extends React.Component
         return(
             <Layout className="" style={{ height: "100vh" }}>
                 <Content style={{backgroundImage:"url("+aa+")",backgroundSize:"cover"}}>
-                    <span className="f3 pt4 shadow-1 pa3 br-pill pl3 gray fw6">Chat on go!</span>
-                    <Row center="xs" className="center">
+                    <span className="f3 pt4 shadow-1 pa3 br-pill pl3 gray fw6" style={{fontSize:"3vh"}}>Chat on go!</span>
+                    <Row center="xs"  className="cen">
                         <Col xs={4} >
-                       
                         </Col>
                         <Col xs={2} className="tr">
                                         <div className="dib v-mid tc pt5 pr4" >
-                                            <Icon type="fire" style={{ fontSize: "200px" }} className="logo" theme="filled" />
-                                            <Title level={2} style={{ fontSize: "35px" }} className="pa2 white" type="secondary">
-                                                <span className="black ">fireflow</span>
+                                            <Icon type="fire" style={{ fontSize: "18vh" }} className="logo" theme="filled" />
+                                            <Title level={2} style={{ fontSize: "3vh" }} className="pa2 white" type="secondary">
+                                                <span className="gray">fireflow</span>
                                             </Title>
                                         </div>
                                     </Col>
-                        <Col xs={2} className="tl pt6 pl4">
-                            <Form className="dib tl  v-mid login-form " style={{ width: "240px" }} >
+                        <Col xs={2} className="tl pl4 pt4" style={{ width: "50vw" }} >
+                            <Title level={2}>Enter Display Name for Chat.</Title>
+                            <Text className=" f6 gray">Your Info Will be Erased as soon as you logout.</Text>
+                            <Form className="dib tl  v-mid login-form " style={{ width: "20vw",fontSize:"3vh" }}  >
                                 <Form.Item hasFeedback help={this.state.help} validateStatus={this.state.Validate}>
                                     <Input
                                         spellCheck={false}
