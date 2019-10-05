@@ -181,7 +181,7 @@ class Room extends React.Component {
             }).then((res)=>{
                 console.log(res);
             })
-            temp.push({ msg: s, user:"You", time: "05:16 PM", d: 1 });
+            temp.push({ msg: s, user:"You", time: time, d: 1 });
             this.setState({ msg: temp })
             this.setState({ val: "" })
 
