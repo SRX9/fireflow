@@ -77,10 +77,18 @@
 .rline:focus {outline:0;}
 
 .msg{
-    background-color: rgb(238, 248, 255);
+    background-color: rgb(202, 233, 255);
     overflow: hidden;
 }
 
 .logo{
 	color:rgb(31, 173, 255)
+}
+
+
+.foot{
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 15px 15px 0px 0px;
+    color: black;
 }

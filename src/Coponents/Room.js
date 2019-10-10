@@ -303,11 +303,11 @@ class Room extends React.Component {
                         </Content>
                     </Col>
                     </Row>
-                    <Footer style={{padding:"13px",paddingTop:"24px",height:"10vh", background: '#fff',width:"100%"}}>
+                    <Footer className="foot" style={{padding:"13px",paddingTop:"24px",height:"10vh", background: '#fff'}}>
                         <TextArea
                         className="black listo msg"
                         disabled={this.state.disable}
-                        placeholder="....."
+                        placeholder="Typer here..."
                         spellCheck={false}
                         onChange={(val)=>{
                             this.setState({val:val.target.value});
