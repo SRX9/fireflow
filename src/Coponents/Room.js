@@ -188,7 +188,7 @@ class Room extends React.Component {
 
     render() {
         return (
-                <Layout style={{ height: "100vh" }} className="msg">
+            <Layout style={{ height: "100vh" }} className="msg">
                     <Header style={{ background: '#fff', padding: 0,height:"6.8vh" }}>
                         <div className="f2 pl3 dib">
                             <Icon type="number" className="dib pr1"/>

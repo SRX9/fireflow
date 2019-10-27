@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 import { Layout, Menu, Icon, Divider, Input, Form, Button, Modal, message } from 'antd';
 import './main.css';
 import Main from '../main.png';

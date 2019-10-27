@@ -3,6 +3,7 @@ import { Layout, Menu, Icon, Input, Form, Button, Modal, message, AutoComplete }
 import './main.css';     
 //import {Divider} from 'semantic-ui-react';
 import axios from 'axios';
+import MediaQuery from 'react-responsive';
 import Room from './Room';
 import { withRouter} from 'react-router-dom';
 import Channel from './Channel';

@@ -6,6 +6,7 @@ import 'tachyons';
 import MediaQuery from 'react-responsive';
 import { Route} from 'react-router-dom';
 import Home from './Coponents/Home';
+import mobile from ".././src/bb.png";
 class App extends React.Component
 {
 
@@ -23,7 +24,12 @@ class App extends React.Component
       <MediaQuery minDeviceWidth={800} >
         {(matches) =>
           !matches
-            ? <h1 style={{margin:0}}>You are retina</h1>
+            ? <div className="h-100" 
+              style={{ width:"100vw",height:"100vh",
+              backgroundImage:"url("+mobile+")",
+              backgroundSize:"cover",
+              backgroundPosition:"center" }}>
+            </div>
             : 
             <div className="" style={{overflowX:"hidden"}}>
               <Route path="/main" render={()=>{
