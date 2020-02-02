@@ -98,7 +98,7 @@ class Home extends React.Component
                 {(matches) =>
                     matches
                         ? <Layout className="" style={{ height: "100vh" }}>
-                <Content style={{backgroundImage:"url("+aa+")",backgroundSize:"cover"}}>
+                <Content style={{backgroundImage:"url("+aa+")",backgroundSize:"cover",backgroundPosition:"center"}}>
                     <span className="f3 pt4 shadow-1 pa3 br-pill pl3 gray fw6" style={{fontSize:"3vh"}}>Chat on go!</span>
                     <Row center="xs"  className="cen">
                         <Col xs={4} >
@@ -133,7 +133,7 @@ class Home extends React.Component
                                     </Col>
                         <Col xs={4}/>
                     </Row>
-                    <span className="f5 fr pr3 " style={{paddingTop:"48.6%"}}>Copyright @2019.</span>
+                    <span className="f5 fr pr3 " style={{paddingTop:"48.6%"}}>Copyright @2020 fireflow - <span style={{fontWeight:"600"}}>SRx</span>.</span>
                 </Content>
                         </Layout> : <Layout className="" style={{ height: "100vh" }}>
                             <Content style={{ backgroundImage: "url(" + aa + ")", backgroundSize: "cover" }}>
@@ -171,7 +171,7 @@ class Home extends React.Component
                                     </Col>
                                     <Col xs={4} />
                                 </Row>
-                                <span className="f5 fr pr3 " style={{ paddingTop: "48.6%" }}>Copyright @2019.</span>
+                                <span className="f5 fr pr3 " style={{ paddingTop: "48.6%" }}>Copyright @2020 </span>
                             </Content>
                         </Layout>
             }</MediaQuery>
