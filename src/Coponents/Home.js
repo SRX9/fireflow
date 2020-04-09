@@ -107,9 +107,9 @@ class Home extends React.Component
                                         <div className="dib v-mid tc pt5 pr4" >
                                             <img style={{ height: "18vh",width:"auto" }} className="logo" src="https://res.cloudinary.com/dvfrsu2d5/image/upload/v1586416297/fireflow_mitcvz.png" class="logo image" id="thumbnail" />
                                             {/*<Icon type="fire" style={{ fontSize: "18vh" }} className="logo" theme="filled" />*/}
-                                            <Title level={2} style={{ fontSize: "3vh" }} className="pa2 white" type="secondary">
+                                            {/*<Title level={2} style={{ fontSize: "3vh" }} className="pa2 white" type="secondary">
                                                 <span className="gray">fireflow</span>
-                                            </Title>
+                                            </Title>*/}
                                         </div>
                                     </Col>
                         <Col xs={2} className="tl pl4 pt4" style={{ width: "50vw" }} >
